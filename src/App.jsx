@@ -1,6 +1,7 @@
 import './App.css'
-import ProjectsPage from './Projects/ProjectsPage';
-import ProjectsPage2 from './Projects/ProjectsPage2';
+/* import ProjectsPage from './Projects/ProjectsPage';
+import ProjectsPage2 from './Projects/ProjectsPage2'; */
+import React from 'react';
 
 /* function App() {
   return (
@@ -18,6 +19,33 @@ import ProjectsPage2 from './Projects/ProjectsPage2';
     </blockquote>
   );
 } */
+
+function MyButton() {
+  return(
+    <button>
+      I'm a button
+    </button>
+  );
+};
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+};
+
+
+function AboutPage() {
+  return (
+    <>
+      <h1>About</h1>
+      <p>Hello there.<br />How do you do?</p>
+    </>
+  );
+};
 
 const user = {
   name: 'BMW',
@@ -39,7 +67,19 @@ export default function Profile() {
         }} />
     </>
   );
+};
+
+let content;
+if (isLoggedIn) {
+  content = <AdminPanel />;
+} else{
+  content = <LoginForm />;
 }
+return (
+  <div>
+    {content}
+  </div>
+);
 
 <div>
   {estaregistrado ?(
@@ -50,6 +90,43 @@ export default function Profile() {
   }
 </div>
 
+const product = [
+  {title: 'Cabbage', isFruit: false, id: 1},
+  {title: 'Garlic', isFruit: false, id: 2},
+  {title: 'Apple', isFruit: true, id: 3},
+];
+
+export default function ShoppingList() {
+  const listItems = products.map(product =>
+    <li
+      key = {product.id}
+      style = {{
+        color: product.isFruit ? 'magenta' : 'darkgreen'
+      }}
+      >
+        {product.title}
+    </li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+
+function formatName(user) {
+  return user.firstName + ' ' + user.lastname;
+}
+
+const user = {
+  firstName: 'Luis Fernando',
+  lastname: 'Velásquez Monsalve'
+};
+
+const ProjectsPage2 = ()=>{
+  if (user) {
+    return <h1>Hello, {formatName(user)}!</h1>;
+  }
+  return <h1>Hello, Stranger.</h1>;
+}
 
 
 /* export default App */
