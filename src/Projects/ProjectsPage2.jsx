@@ -31,13 +31,30 @@ import React from 'react'
   return ele;
 } */
 
-const ProjectsPage2 = ()=>{
+/* const ProjectsPage2 = ()=>{
   const element = <div>
     <h1>Pagina principal</h1>
     <h2>Articulo</h2>
     <section>100 años de soledad</section>
   </div>;
   return element;
+} */
+
+
+function formatName(user) {
+  return user.firstName + ' ' + user.lastname;
+}
+
+const user = {
+  firstName: 'Luis Fernando',
+  lastname: 'Velásquez Monsalve'
+};
+
+const ProjectsPage2 = ()=>{
+  if (user) {
+    return <h1>Hello, {formatName(user)}!</h1>;
+  }
+  return <h1>Hello, Stranger.</h1>;
 }
 
 
