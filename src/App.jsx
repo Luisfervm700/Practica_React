@@ -38,22 +38,22 @@ export default function MyApp() {
 };
 
 
-function AboutPage() {
+/* function AboutPage() {
   return (
     <>
       <h1>About</h1>
       <p>Hello there.<br />How do you do?</p>
     </>
   );
-};
+}; */
 
-const user = {
+/* const user = {
   name: 'BMW',
   imageUrl: 'https://www.bmwgroup.com/en/brands-and-services/bmw/bmwi.html',
   imageSize: '90',
-};
+}; */
 
-export default function Profile() {
+/* export default function Profile() {
   return (
     <>
       <h1>{user.name}</h1>
@@ -67,9 +67,9 @@ export default function Profile() {
         }} />
     </>
   );
-};
+}; */
 
-let content;
+/* let content;
 if (isLoggedIn) {
   content = <AdminPanel />;
 } else{
@@ -79,24 +79,24 @@ return (
   <div>
     {content}
   </div>
-);
+); */
 
-<div>
+{/* <div>
   {estaregistrado ?(
     <Registrado/>
     ) : (
       <Login/>
     )
   }
-</div>
+</div> */}
 
-const product = [
+/* const product = [
   {title: 'Cabbage', isFruit: false, id: 1},
   {title: 'Garlic', isFruit: false, id: 2},
   {title: 'Apple', isFruit: true, id: 3},
-];
+]; */
 
-export default function ShoppingList() {
+/* export default function ShoppingList() {
   const listItems = products.map(product =>
     <li
       key = {product.id}
@@ -110,18 +110,18 @@ export default function ShoppingList() {
   return (
     <ul>{listItems}</ul>
   );
-}
+} */
 
 /* function formatName(user) {
   return user.firstName + ' ' + user.lastname;
-}
+} */
 
-const user = {
+/* const user = {
   firstName: 'Luis Fernando',
   lastname: 'Velásquez Monsalve'
-};
+}; */
 
-const ProjectsPage2 = ()=>{
+/* const ProjectsPage2 = ()=>{
   if (user) {
     return <h1>Hello, {formatName(user)}!</h1>;
   }
