@@ -93,20 +93,20 @@ export function AppFrutas () {
 
 
 // Funcion AppProfile
-export function GetImageUrl(person, size = 's') {
+export function GetImageUrl(cars, size = 's') {
   return (
     'https://i.imgur.com' +
-    person.imageId +
+    cars.imageId +
     size +
     '.jpg'
   );
 };
-function Avatar({person, size}) {
+function Avatar({cars, size}) {
   return (
     <img
       className = "avatar"
-      src = {GetImageUrl(person)}
-      alt = {person.name}
+      src = {GetImageUrl(cars)}
+      alt = {cars.name}
       width = {size}
       height = {size}
     />
@@ -117,17 +117,17 @@ export function Profile() {
     <>
       <div className = 'card'>
         <Avatar size = {100}
-          person  = {{name: "Katsuko Saruhashi", imageId: "Yfe0qp2", }}
+          cars  = {{name: "Aston Martin Vulcan", imageId: "Aston-Martin-Vulcan.jpg", }}
       />{" "}
       </div>
       <div className = "card">
           <Avatar size = {80}
-            person = {{ name: "Aklilu Lemma", imageId: "0KS67lh", }}
+            cars = {{ name: "BMW", imageId: "BMW.jpg", }}
           />{" "}
       </div>
       <div className = "card">
           <Avatar size = {60}
-            person = {{ name: "Lin Lanying", imageId: "1bX5QH6", }}
+            cars = {{ name: "Bugatti", imageId: "Bugatti.jpg", }}
           />{" "}
       </div>
     </>
