@@ -1,10 +1,8 @@
 import React from 'react'
 
 
-
 /* const ProjectsPage2 = ()=>{
   const name = 'lian';
-
   const element = <h1>Hello,
     {name}. Welcome to estudiante de React.</h1>;
   return element;
@@ -13,7 +11,6 @@ import React from 'react'
 
 /* const ProjectsPage2 = ()=>{
   let i = 1;
-
   const element = <h1> { (i = 1) ? 'Hola!!' : 'Acceso denegado' } </h1>
   return element;
 } */
@@ -31,13 +28,30 @@ import React from 'react'
   return ele;
 } */
 
-const ProjectsPage2 = ()=>{
+
+/* const ProjectsPage2 = ()=>{
   const element = <div>
     <h1>Pagina principal</h1>
     <h2>Articulo</h2>
     <section>100 años de soledad</section>
   </div>;
   return element;
+} */
+
+
+
+export function formatName(user) {
+  return user.firstName + ' ' + user.lastname;
+}
+const user = {
+  firstName: 'Luis Fernando',
+  lastname: 'Velásquez Monsalve'
+};
+const ProjectsPage2 = ()=>{
+  if (user) {
+    return <h1>Hello, {formatName(user)}!</h1>;
+  }
+  return <h1>Hello, Stranger.</h1>;
 }
 
 export default ProjectsPage2
