@@ -16,12 +16,12 @@ export function List () {
 }
 
 
-function getImageUrl(person) {
-    return (
-        'https://i.imgur.com' +
-        's.jpg'
-    );
-}
+// function getImageUrl(person) {
+//     return (
+//         'https://i.imgur.com' +
+//         's.jpg'
+//     );
+// }
 
 const people2 = [{
     id: 0,

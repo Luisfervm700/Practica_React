@@ -1,11 +1,13 @@
 import './App.css'
+import React from 'react';
+
 import ProjectsPage1 from './Projects/ProjectsPage1';
 import ProjectsPage2 from './Projects/ProjectsPage2';
 import {MyButton, MyApp, AboutPage, Profile, ShoppingList} from './Projects/ProjectsPage3';
 import {AppGreeting, AppGreeter, AppGreeter2, AppEmpleado, AppFrutas, AppProfile} from './Projects/ProjectsPage4';
 import {Team} from './Projects/ProjectsPage5';
 import {List, ListPersona} from './Projects/ProjectsPage6';
-import React from 'react';
+import {Button1, Toolbar, Button3} from './Projects/ProjectsPage7';
 
 
 function App() {
@@ -37,8 +39,9 @@ function App() {
       <ListPersona/>
 
       {/* Estas son funciones del ProjectPage7 */}
-      {/* < /> */}
-
+      <Button1/>
+      <Toolbar/>
+      <Button3/>
     </div>
   );
 }
