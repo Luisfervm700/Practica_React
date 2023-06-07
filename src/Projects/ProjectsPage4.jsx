@@ -103,6 +103,7 @@ function Avatar({cars, size}) {
     />
   );
 };
+
 export function Profile() {
   return (
     <>

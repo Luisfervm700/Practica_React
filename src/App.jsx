@@ -4,6 +4,7 @@ import ProjectsPage2 from './Projects/ProjectsPage2';
 import {MyButton, MyApp, AboutPage, Profile, ShoppingList} from './Projects/ProjectsPage3';
 import {AppGreeting, AppGreeter, AppGreeter2, AppEmpleado, AppFrutas, AppProfile} from './Projects/ProjectsPage4';
 import {Team} from './Projects/ProjectsPage5';
+import {List, ListPersona} from './Projects/ProjectsPage6';
 import React from 'react';
 
 
@@ -30,9 +31,16 @@ function App() {
 
       {/* Estas son funciones del ProjectPage5 */}
       <Team/>
+
+      {/* Estas son funciones del ProjectPage6 */}
+      <List/>
+      <ListPersona/>
+
+      {/* Estas son funciones del ProjectPage7 */}
+      {/* < /> */}
+
     </div>
   );
-};
-
+}
 
 export default App;
