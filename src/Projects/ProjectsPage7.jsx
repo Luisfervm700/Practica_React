@@ -44,9 +44,11 @@ export function Button3({onClick, Children}) {
 }
 
 
-// Funcion Signup
+/* // Funcion Signup
 export function Signup() {
   return (
     <Form onSubmit = {()}></Form>
   )
-}
+} */
+
+
