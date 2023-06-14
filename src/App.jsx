@@ -8,7 +8,7 @@ import {AppGreeting, AppGreeter, AppGreeter2, AppEmpleado, AppFrutas, AppProfile
 import {Team} from './Projects/ProjectsPage5';
 import {List, ListPersona} from './Projects/ProjectsPage6';
 import {Button1, Toolbar, Button3, Signup} from './Projects/ProjectsPage7';
-import {Counter} from './Projects/ProjectsPage8';
+import {Counter, ListaPersona, DiceGame, Gallery} from './Projects/ProjectsPage8';
 
 
 function App() {
@@ -45,8 +45,11 @@ function App() {
       <Button3/>
       <Signup/>
 
-      {/* Estas son funciones del ProjectPage5 */}
+      {/* Estas son funciones del ProjectPage8 */}
       <Counter/>
+      <ListaPersona/>
+      <DiceGame/>
+      <Gallery/>
 
     </div>
   );
