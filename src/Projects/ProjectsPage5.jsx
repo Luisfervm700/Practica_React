@@ -21,6 +21,7 @@ FirstApp.defaultProps ={
   subT2: "No hay sub titulo 2"
 }
 
+// Funcion Team
 export function Team() {
   return (
     <FirstApp tittle = "Tema: React" subTitle = {32}/>

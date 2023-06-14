@@ -8,6 +8,8 @@ const people1 = [
     'Andrea Gonzalez: Desarrollodor'
 ];
 
+
+// Funcion List
 export function List () {
     const listItems = people1.map(person =>
         <li>{person}</li>
@@ -57,6 +59,7 @@ const people2 = [{
 
 
 
+// Funcion ListPersona
 export function ListPersona() {
   let filtro = "Desarrollador"
   const desarrollador = people2.filter(person =>
